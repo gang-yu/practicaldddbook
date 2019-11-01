@@ -17,6 +17,10 @@ public class CargoBookingQueryService {
 
     private CargoRepository cargoRepository; // Inject Dependencies
 
+    public CargoBookingQueryService(CargoRepository cargoRepository){
+        this.cargoRepository = cargoRepository;
+    }
+    
     /**
      * Find all Cargos
      * @return List<Cargo>
